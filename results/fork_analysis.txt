@@ -1,0 +1,24 @@
+trajectory_forks_all24.csv de contract n 96 immediate_candidate_better 87 late_wins_losses_ties 27 20 49 harm_despite_immediate_better 18/87 exploratory_sign_test_p 0.3817
+trajectory_forks_all24.csv de reflect n 96 immediate_candidate_better 42 late_wins_losses_ties 19 15 62 harm_despite_immediate_better 5/42 exploratory_sign_test_p 0.6076
+trajectory_forks_all24.csv pso contract n 96 immediate_candidate_better 77 late_wins_losses_ties 6 8 82 harm_despite_immediate_better 8/77 exploratory_sign_test_p 0.7905
+trajectory_forks_all24.csv pso reflect n 96 immediate_candidate_better 16 late_wins_losses_ties 6 5 85 harm_despite_immediate_better 0/16 exploratory_sign_test_p 1.0
+trajectory_forks_all24.csv cma contract n 96 immediate_candidate_better 80 late_wins_losses_ties 37 54 5 harm_despite_immediate_better 41/80 exploratory_sign_test_p 0.0929
+trajectory_forks_all24.csv cma reflect n 96 immediate_candidate_better 40 late_wins_losses_ties 35 56 5 harm_despite_immediate_better 22/40 exploratory_sign_test_p 0.0354
+trajectory_forks_all24.csv conditional_harm_difference cma minus de functions 24 mean 0.281 function_cluster_bootstrap_CI 0.17 0.389
+trajectory_forks_all24.csv conditional_harm_difference cma minus pso functions 24 mean 0.382 function_cluster_bootstrap_CI 0.271 0.49
+trajectory_forks_10d.csv de contract n 96 immediate_candidate_better 89 late_wins_losses_ties 24 19 53 harm_despite_immediate_better 18/89 exploratory_sign_test_p 0.5424
+trajectory_forks_10d.csv de reflect n 96 immediate_candidate_better 31 late_wins_losses_ties 10 9 77 harm_despite_immediate_better 2/31 exploratory_sign_test_p 1.0
+trajectory_forks_10d.csv pso contract n 96 immediate_candidate_better 88 late_wins_losses_ties 2 11 83 harm_despite_immediate_better 10/88 exploratory_sign_test_p 0.0225
+trajectory_forks_10d.csv pso reflect n 96 immediate_candidate_better 17 late_wins_losses_ties 4 6 86 harm_despite_immediate_better 0/17 exploratory_sign_test_p 0.7539
+trajectory_forks_10d.csv cma contract n 96 immediate_candidate_better 79 late_wins_losses_ties 41 52 3 harm_despite_immediate_better 47/79 exploratory_sign_test_p 0.2997
+trajectory_forks_10d.csv cma reflect n 96 immediate_candidate_better 27 late_wins_losses_ties 49 43 4 harm_despite_immediate_better 9/27 exploratory_sign_test_p 0.6024
+trajectory_forks_10d.csv conditional_harm_difference cma minus de functions 24 mean 0.41 function_cluster_bootstrap_CI 0.246 0.562
+trajectory_forks_10d.csv conditional_harm_difference cma minus pso functions 24 mean 0.503 function_cluster_bootstrap_CI 0.365 0.628
+trajectory_forks_20d.csv de contract n 96 immediate_candidate_better 91 late_wins_losses_ties 20 12 64 harm_despite_immediate_better 12/91 exploratory_sign_test_p 0.2153
+trajectory_forks_20d.csv de reflect n 96 immediate_candidate_better 35 late_wins_losses_ties 2 5 89 harm_despite_immediate_better 0/35 exploratory_sign_test_p 0.4531
+trajectory_forks_20d.csv pso contract n 96 immediate_candidate_better 92 late_wins_losses_ties 3 8 85 harm_despite_immediate_better 8/92 exploratory_sign_test_p 0.2266
+trajectory_forks_20d.csv pso reflect n 96 immediate_candidate_better 12 late_wins_losses_ties 4 2 90 harm_despite_immediate_better 1/12 exploratory_sign_test_p 0.6875
+trajectory_forks_20d.csv cma contract n 96 immediate_candidate_better 81 late_wins_losses_ties 36 54 6 harm_despite_immediate_better 46/81 exploratory_sign_test_p 0.0725
+trajectory_forks_20d.csv cma reflect n 96 immediate_candidate_better 37 late_wins_losses_ties 39 51 6 harm_despite_immediate_better 28/37 exploratory_sign_test_p 0.2461
+trajectory_forks_20d.csv conditional_harm_difference cma minus de functions 24 mean 0.448 function_cluster_bootstrap_CI 0.34 0.552
+trajectory_forks_20d.csv conditional_harm_difference cma minus pso functions 24 mean 0.49 function_cluster_bootstrap_CI 0.375 0.604

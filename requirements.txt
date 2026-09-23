@@ -1,0 +1,5 @@
+numpy==2.3.5
+coco-experiment==2.8.2
+cma==4.5.0
+scipy==1.17.0
+matplotlib==3.10.8
