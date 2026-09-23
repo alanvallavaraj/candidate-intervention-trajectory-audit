@@ -43,7 +43,7 @@ pdflatex -halt-on-error main.tex
 
 The manuscript is a draft: the author must supply affiliation, disclosures, and the journal's template before submission. The current experiment does **not** establish superiority over GPSAF, JANUS, or optimized CMA-ES implementations. Independent audit, additional baselines and target-based/anytime analysis would strengthen a journal submission. See [docs/JOURNAL_SUBMISSION_STRATEGY.md](docs/JOURNAL_SUBMISSION_STRATEGY.md).
 
-For PLOS ONE, use the [PLOS submission folder](paper/plos_one/): upload its `main.pdf` as the manuscript and `Fig1.tif`/`Fig2.tif` separately. The PLOS manuscript includes the required AI-tool disclosure; confirm the title-page contact email and other declarations before submission.
+For PLOS ONE, use the [PLOS submission folder](paper/plos_one/): upload its `main.pdf` as the manuscript and `Fig1.tif`/`Fig2.tif` separately. It includes a separate one-page cover-letter draft, reference audit, and AI-tool disclosure. Confirm the title-page contact email and complete the other author declarations before submission. Reproducibility checks and their scope are recorded in [docs/REPRODUCIBILITY_AUDIT.md](docs/REPRODUCIBILITY_AUDIT.md).
 
 ## Citation and integrity
 

@@ -8,6 +8,8 @@ This folder follows the supplied PLOS LaTeX template (version 3.8, April 2026). 
 | `Fig1.tif` | Upload separately as Fig 1. |
 | `Fig2.tif` | Upload separately as Fig 2. |
 | `main.tex`, `references.bib`, `plos2025.bst` | Retain as the PLOS source; supply if the journal requests LaTeX files. |
+| `COVER_LETTER_DRAFT.pdf`, `COVER_LETTER_DRAFT.tex` | Separate one-page cover-letter draft. Replace the three marked author-supplied fields before uploading. |
+| `REFERENCE_AUDIT.md` | Bibliography corrections and verification sources. |
 | `SUBMISSION_METADATA.md` | Text for the data availability field and a short list of author-supplied declarations. |
 
 The two TIFF files are RGB, LZW compressed, 300 dpi, 2220 pixels wide, and below 10 MB each. Their plots are regenerated from the released CSVs with `python ../../code/make_fork_figure.py --plos` and `python ../../code/plot_injection.py --plos`, run from `data/processed/` (use `../../code` there). They have no figure number or caption in the image; each caption is directly in the manuscript.
@@ -23,4 +25,4 @@ pdflatex -halt-on-error main.tex
 
 PLOS asks for the PDF as the manuscript, with TIFFs as separate uploads. The references use the template's `plos2025.bst`. Do not include the attached `latexdiff.zip` in an initial submission; it is useful only if a tracked revised PDF is requested later.
 
-Before submission, confirm the corresponding author email and affiliation, review the AI-tool disclosure and scientific claims, and complete the separate funding, competing-interest, CRediT, and data availability fields in the submission system. The title page intentionally leaves the email to be confirmed; a guessed address should not be published.
+The repository version omits the corresponding-author address for privacy. Use the private submission bundle, which contains the address, and confirm that it is the one you want published. Before submission, verify the affiliation, enter your ORCID iD in the submission system, review the AI-tool disclosure and scientific claims, and complete funding, competing-interest, CRediT, and data availability fields. The bibliography has 43 cited entries, with four dotted arXiv identifiers checked in the compiled PDF. See `REFERENCE_AUDIT.md` for corrections and `../../docs/REPRODUCIBILITY_AUDIT.md` for the experiment check.

@@ -1,0 +1,22 @@
+\documentclass[11pt]{letter}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\signature{Alan Vallavaraj\\School of Computer Science and Engineering\\University of Westminster\\Contact provided in private submission copy}
+\address{Alan Vallavaraj\\School of Computer Science and Engineering\\University of Westminster\\London, United Kingdom}
+\begin{document}
+\begin{letter}{Editors\\PLOS ONE}
+\opening{Dear Editors,}
+
+Please consider my sole-authored Research Article, ``When better candidates hurt search: paired counterfactual audits of candidate replacement in differential evolution, particle swarms and CMA-ES,'' for publication in PLOS ONE.
+
+The study asks whether replacing an optimizer's proposal with a candidate that has a genuinely lower immediate objective value reliably improves later search. I cloned optimizer states at matched checkpoints on the 24 noiseless BBOB functions and followed treated and untreated branches under equal continuation budgets. An immediately better contracted candidate was followed by a worse final best-so-far value in 48/267 DE, 26/257 PSO and 134/240 CMA-ES forks. A separate CMA-ES comparison on unused instances observed delayed harm for both direct replacement and the documented injection interface. The contribution is a reproducible, bounded failure-mode analysis; I do not claim a new optimizer or superiority over established methods.
+
+The work complements studies of surrogate-assisted optimization and candidate injection by Blank and Deb, Hansen, and others. The paired fork design distinguishes the first candidate's measured quality from its effect on the subsequent host trajectory. Branch-level outcome files, pinned dependencies, analysis scripts and reproduction instructions are available in the public repository cited in the manuscript.
+
+\textbf{Complete before submission:} Prior interactions with PLOS concerning this manuscript: [state any, or ``None'']. Suggested Academic Editors from the current PLOS ONE editorial board: [insert suitable names after checking expertise and conflicts]. Opposed reviewers: [list names with reasons, or ``None''].
+
+Thank you for considering the manuscript.
+
+\closing{Yours sincerely,}
+\end{letter}
+\end{document}
