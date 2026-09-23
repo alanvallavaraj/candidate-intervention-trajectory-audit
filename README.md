@@ -10,6 +10,7 @@ On 24 noiseless COCO/BBOB functions at dimensions 5, 10, and 20, contraction pro
 |---|---|
 | `paper/main.tex`, `paper/references.bib` | Eight-page research manuscript source, including 43 cited papers. |
 | `paper/main.pdf` | Compiled manuscript for inspection. |
+| `paper/plos_one/` | PLOS ONE template version with manuscript PDF, two separate 300 dpi TIFF figures, Vancouver bibliography style, and submission notes. |
 | `paper/figures/` | PDF figure sources used in the manuscript. |
 | `code/` | Experiment, replay checks, analysis, and plotting scripts. |
 | `data/processed/` | All main, cap-check and injection branch-level CSV records. |
@@ -41,6 +42,8 @@ pdflatex -halt-on-error main.tex
 ```
 
 The manuscript is a draft: the author must supply affiliation, disclosures, and the journal's template before submission. The current experiment does **not** establish superiority over GPSAF, JANUS, or optimized CMA-ES implementations. Independent audit, additional baselines and target-based/anytime analysis would strengthen a journal submission. See [docs/JOURNAL_SUBMISSION_STRATEGY.md](docs/JOURNAL_SUBMISSION_STRATEGY.md).
+
+For PLOS ONE, use the [PLOS submission folder](paper/plos_one/): upload its `main.pdf` as the manuscript and `Fig1.tif`/`Fig2.tif` separately. The PLOS manuscript includes the required AI-tool disclosure; confirm the title-page contact email and other declarations before submission.
 
 ## Citation and integrity
 

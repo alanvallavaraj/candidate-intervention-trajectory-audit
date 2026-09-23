@@ -1,9 +1,12 @@
 """Publication-style plot of paired-fork conditional harm rates."""
+import argparse
 import csv
 from collections import defaultdict
+from pathlib import Path
 
 import matplotlib.pyplot as plt
 import numpy as np
+from PIL import Image
 
 
 DATA=((5,'trajectory_forks_all24.csv',100),
@@ -13,9 +16,9 @@ HOSTS=('de','pso','cma')
 COLORS=('#4363a5','#40a78b','#c65a4a')
 
 
-def main():
+def main(plos=False):
     rng=np.random.default_rng(534)
-    fig,ax=plt.subplots(figsize=(8.3,4.7),layout='constrained')
+    fig,ax=plt.subplots(figsize=(7.4,4.5) if plos else (8.3,4.7),layout='constrained')
     for j,(dimension,path,horizon) in enumerate(DATA):
         grouped=defaultdict(dict)
         for row in csv.DictReader(open(path,newline='')):
@@ -45,13 +48,23 @@ def main():
     ax.set_xticks(range(3),[f'{d} dimensions' for d,_,_ in DATA])
     ax.set_ylim(0,.84)
     ax.set_ylabel('Worse best-so-far after continuation\nconditional on better immediate candidate')
-    ax.set_title('Candidate improvement does not ensure trajectory improvement')
+    if not plos:
+        ax.set_title('Candidate improvement does not ensure trajectory improvement')
     ax.legend(ncol=3,loc='upper left',frameon=False)
     ax.grid(axis='y',alpha=.2)
     ax.set_axisbelow(True)
-    fig.savefig('fork_conditional_harm.pdf')
-    fig.savefig('fork_conditional_harm.png',dpi=200)
+    if plos:
+        out=Path(__file__).resolve().parents[1]/'paper'/'plos_one'/'Fig1.tif'
+        fig.savefig(out,dpi=300,pil_kwargs={'compression':'tiff_lzw'})
+        with Image.open(out) as im:
+            im.convert('RGB').save(out,format='TIFF',compression='tiff_lzw',dpi=(300,300))
+    else:
+        fig.savefig('fork_conditional_harm.pdf')
+        fig.savefig('fork_conditional_harm.png',dpi=200)
     plt.close(fig)
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser()
+    parser.add_argument('--plos',action='store_true',help='Write PLOS ONE figure TIFF without title')
+    main(parser.parse_args().plos)

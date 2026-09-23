@@ -3,3 +3,4 @@ coco-experiment==2.8.2
 cma==4.5.0
 scipy==1.17.0
 matplotlib==3.10.8
+Pillow==12.3.0
