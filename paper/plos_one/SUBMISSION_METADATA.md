@@ -6,7 +6,7 @@
 
 **AI-use disclosure:** Included in the manuscript's Materials and methods section. The author must read and confirm that this accurately describes tool use and verification before submission.
 
-**Corresponding author email:** This public repository copy omits the address. The private submission bundle has the contact line filled; confirm it is the address you want published and use that in Editorial Manager.
+**Corresponding author email:** `a.vallavaraj@westminster.ac.uk`, provided by the author, appears on the manuscript title page and cover-letter draft. Use the same address in Editorial Manager.
 
 **Corresponding author ORCID iD:** Enter your own verified ORCID iD in the PLOS submission system. No identifier has been guessed or added to the manuscript.
 
